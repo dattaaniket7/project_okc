@@ -1,0 +1,302 @@
+@import url('../css/font.css');
+
+
+
+
+
+
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root {
+
+
+    /** theme colours*/
+--text-gray: #3f4954;
+--text-light: #68666ada;
+--white:#ffffff;
+--bg-color: #0f0f0f;
+--midnight: #104f55;
+
+/** gradient colours*/
+--sky: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+--cotton-candy: linear-gradient(to top, #ecd4e29c 0%, #f8510fc2 100%);
+
+
+
+
+
+    /** theme font-family*/
+    --Oswald: 'Oswald';
+    --Bebas_Neue: 'Bebas_Neue';
+    --Rubik_Moonrocks: 'Rubik_Moonrocks';
+    --Sacramento: 'Sacramento';
+    --Abel: 'Abel';
+    --Anton: 'Anton';
+    --Lexend: 'Lexend';
+    --Livvic: 'Livvic';
+    --Josefin_Sans: 'Josefin_Sans'
+}
+
+
+
+
+/*----------------global class------------------*/
+a{
+    text-decoration: none;
+    color:var(--text-gray)
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-family: var(--Abel);
+    font-size: 2.5rem;
+}
+
+h3{
+    font-family: Passifille;
+    font-size: 1.9rem;
+    text-shadow: 4.5px 4.5px #0f0f0f;
+    
+}
+
+
+h2 {
+    font-family: var(--Oswald);
+}
+
+button.btn {
+  border: none;  
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.16rem;
+  font-family: Tekton Pro;
+  cursor: pointer;
+  color: #ffffff;
+  text-shadow: 0.1rem 0.1rem #0f0f0f;
+  
+} 
+
+span {
+    font-family: var(--Abel);
+}
+/*---------x-------global class---------x---------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------x---------navbar-----------x-------------*/
+.nav{
+    background: white;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+
+.nav .nav-menu{
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse {
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+.nav .toggle-collapse .toggle-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: var(--text-gray);
+}
+
+.collapse{
+    height: 30rem;
+}
+
+
+
+
+
+
+
+
+.nav .nav-items {
+    
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link {
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--Bebas_Neue);
+    font-size: 1.1rem;
+}
+
+.nav .nav-items .nav-link:hover {
+    background-color: var(--midnight);
+}
+
+.nav .nav-items .nav-link:hover a {
+    color: var(--white);
+}
+
+
+
+
+
+
+
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: var(--Oswald);
+    
+}
+
+.nav .social {
+    padding: 1.4rem 0;
+}
+
+.nav .social i {
+    padding: 0.2rem;
+}
+
+.nav .social i:hover {
+    color: #a1c4cf;
+}
+
+/*--------------------navbar------------------------*
+
+
+
+
+
+
+
+/*-----------------main content-----------------*/
+
+/*---------------- site title-----------------*/
+
+main .site-title {
+    background: url('../assets-images/bridge_better.png');
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title .site-background {
+    padding-top: 10rem;
+    text-align: center;
+    color: var(--white);
+}
+
+main .site-title h1,h3{
+    margin: 1.6rem;
+}
+
+main .site-title .btn {
+    margin: 1.8rem;
+    background: var(--cotton-candy);
+}
+
+
+main .site-title .btn:hover{
+    background: transparent;
+    border: 1px solid var(--white);
+}
+
+
+
+/*-------X--------- site title------X-----------*/
+
+/*---------------------blog carousel------------------------------------*/
+
+main .blog{
+    background: url('../assets-images/jelly.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    width: 100%;
+    background-size: 65%;
+}
+
+main .blog .blog-post {
+    padding-top: 6rem;
+}
+
+main .blog-post .blog-content {
+display: flex;
+flex-direction: column;
+text-align: center;
+width: 80%;
+margin: 3rem 2rem;
+box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+main .blog-content .blog-title {
+    padding: 2rem 0;
+}
+
+main .blog-content .btn-blog {
+    padding: 7rem 2rem;
+    background: var(--cotton-candy);
+    margin: 0.5rem;
+}
+
+main .blog-content span{
+    display: block;
+}
+
+/*----------------XX-----blog carousel------XX------------------------------*/
+
+/*--------X---------main content--------X---------*/
+
+
+
+/*--------------------viewport------------------------*/
+@media only screen and (max-width: 750px){
+    .nav .nav-menu,.nav .nav-items{
+        flex-direction: column;
+    }
+
+    .nav .toggle-collapse{
+        display: initial;
+    }
+}
+
+
+/*-----------x---------viewport-----------x-------------*/

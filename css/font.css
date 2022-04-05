@@ -1,0 +1,62 @@
+/*font-family:bebas*/
+
+
+@font-face {
+    font-family: Bebas_Neue;
+src: url('../fonts/Bebas_Neue/BebasNeue-Regular.ttf');
+}
+
+/*font-family:oswald*/
+
+@font-face {
+    font-family: Oswald;
+src: url('../fonts/Oswald/Oswald-VariableFont_wght.ttf')
+}
+
+
+/*font-family:rubik*/
+@font-face {
+    font-family: Rubik_Moonrocks;
+src: url('../fonts/Rubik_Moonrocks/RubikMoonrocks-Regular.ttf')
+}
+
+/*font-family:sacramento*/
+@font-face {
+    font-family: Sacramento;
+src: url('../fonts/Sacramento/Sacramento-Regular.ttf')
+}
+
+
+/*font-family:anton*/
+@font-face {
+    font-family: Anton;
+src: url('../fonts/Anton/Anton-Regular.ttf')
+}
+
+/*font-family:Abel*/
+@font-face {
+    font-family: Abel;
+src: url('../fonts/Abel/Abel-Regular.ttf')
+}
+
+
+/*font-family:Josefin*/
+@font-face {
+    font-family: Josefin;
+src: url('../fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf')
+}
+
+
+/*font-family:Lexend*/
+@font-face {
+    font-family: Lexend;
+src: url('../fonts/Lexend/Lexend-VariableFont_wght.ttf')
+}
+
+
+
+/*font-family:Livvic*/
+@font-face {
+    font-family: Livvic;
+src: url('../fonts/Livvic/Livvic-Bold.ttf')
+}
